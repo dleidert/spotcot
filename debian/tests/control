@@ -1,0 +1,4 @@
+Test-Command: spotcot --help
+Features: test-name=smoke-help
+Depends: @
+Restrictions: needs-root, superficial

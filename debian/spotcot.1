@@ -1,0 +1,39 @@
+.TH "SPOTCOT" "1" "March 2021" "User manual" "Debian"
+
+.SH NAME
+spotcot \- Spot Cursor-on-Target Gateway
+
+.SH USAGE
+.B spotcot
+.BI "{ -U | --cot_url " COT_URL " }"
+.BI "[ -S | --cot_stale " COT_STALE " ]"
+.BI "{ -k | --api_key " API_KEY " }"
+.BI "[ -i | --interval " INTERVAL " ]"
+.BI "[ -p | --password " PASSWORD " ]"
+.PP
+.B spotcot
+.BI "[ -h | --help]"
+
+.SH OPTIONS
+.TP
+.B -h | --h
+Show this help message and exit.
+.TP
+.BI "-U | --cot_url " COT_URL
+URL to CoT Destination.
+.TP
+.BI "-S | --cot_stale " COT_STALE
+CoT Stale period, in seconds.
+.TP
+.BI "-k | --api_key " API_KEY
+Spot API Key ("XML Feed Id").
+.TP
+.BI "-i | --interval " INTERVAL
+Spot API Query Interval.
+.TP
+.BI "-p | --password " PASSWORD
+Spot Feed Password for private feeds.
+
+.SH AUTHORS
+This manual page was written by \fBDaniel Leidert\fP <\%dleidert@debian\.org\%>
+for the Debian GNU/Linux system, but may be used by others.

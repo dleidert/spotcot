@@ -1,0 +1,36 @@
+Source: spotcot
+Section: python
+Priority: optional
+Maintainer: Greg Albrecht <oss@undef.net>
+Uploaders: Daniel Leidert <dleidert@debian.org>
+Build-Depends: debhelper-compat (= 12),
+               dh-python,
+               python3-aiohttp,
+               python3-all,
+               python3-pycot,
+               python3-pytak,
+               python3-setuptools
+Standards-Version: 4.5.1
+Homepage: https://github.com/ampledata/spotcot
+Vcs-Browser: https://github.com/ampledata/spotcot
+Vcs-Git: https://github.com/ampledata/spotcot.git
+Rules-Requires-Root: no
+Testsuite: autopkgtest-pkg-python
+
+Package: python3-spotcot
+Architecture: any
+Provides: ${python3:Provides}
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         ${shlibs:Depends}
+Description: Spot Cursor-on-Target gateway
+ The spotcot gateway transforms Spot position messages into Cursor on
+ Target (CoT) Position Location Information (PLI) Points for display on
+ Situational Awareness (SA) applications such as the Android Team Awareness
+ Kit (ATAK), WinTAK, RaptorX, et al. This allows partner agencies to track
+ affiliated units without exposing existing networks, amongst other uses.
+ .
+ It can be run as a foreground command line application, or can be run as a
+ background service using a daemon like supervisor.
+ .
+ Usage of this gateway requires a Spot device with service.
